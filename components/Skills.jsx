@@ -1,14 +1,10 @@
 import React from "react";
-import {
-  SiPytorchlightning,
-} from "react-icons/si";
-import { SlGraph } from "react-icons/sl";
-import { RiUserSmileFill } from "react-icons/ri";
+import { motion, useInView } from "framer-motion";
 import { RoughNotation } from "react-rough-notation";
 
 
-
 const Skills = () => {
+
   return (
     <div id="skills" className="w-4/5 py-24 mx-auto">
       <div className="mx-auto flex flex-col flex-start">
@@ -26,7 +22,11 @@ const Skills = () => {
         <h2>Grow your business</h2>
 
         <div class="p-5 my-6 sm:flex sm:flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-4">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <h3 className="text-3xl">⚡</h3>
             <h3 className="text-2xl">
               {" "}
@@ -37,8 +37,12 @@ const Skills = () => {
               With a modern website, I can help you attract more visitors and
               increase your online visibility.
             </p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <h3 className="text-3xl">📈</h3>
             <h3 className="text-2xl">
               {/* <SlGraph className="my-1 text-2xl text-lime-600" /> */}
@@ -48,8 +52,12 @@ const Skills = () => {
               I can design an effective website with optimized call-to-action
               buttons to help you turn more visitors into paying customers.
             </p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <h3 className="text-3xl">😀</h3>
             <h3 className="text-2xl">
               {/* <RiUserSmileFill className="my-1 text-2xl text-amber-400" /> */}
@@ -60,8 +68,12 @@ const Skills = () => {
               appealing, and provides a great user experience to help you retain
               and attract more customers.
             </p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <h3 className="text-3xl">🔝</h3>
             <h3 className="text-2xl">
               {/* <SiPytorchlightning className="my-1 text-2xl" /> */}
@@ -71,7 +83,7 @@ const Skills = () => {
               With a modern, mobile-friendly website, I can help you stay ahead
               of the curve and gain a competitive advantage in your industry.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

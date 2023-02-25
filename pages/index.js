@@ -23,7 +23,7 @@ export default function Home() {
       <Main />
       <Skills />
       <Projects />
-      <MobileProjects/>
+      {/* <MobileProjects/> */}
       <Contact />
     </div>
   );
