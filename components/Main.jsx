@@ -48,9 +48,11 @@ const Main = () => {
               transition={{ duration: 0.7, delay: 2 }}
             >
               <p className="font-normal text-gray-600 tracking-normal">
-                I design and build user-centric websites to help people and
-                brands reach their goals. Specializing in UX and front-end
-                development, I create engaging and effective online experiences.
+                I love creating websites that make people happy and help
+                businesses succeed! I specialize in crafting user-friendly
+                interfaces and building front-end features that keep users
+                engaged and coming back for more. Let's work together to create
+                a website that's not only effective but also a joy to use!
               </p>
             </motion.h3>
           </div>
